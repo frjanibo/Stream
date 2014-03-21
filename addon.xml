@@ -11,7 +11,8 @@
         <website><![CDATA[http://www.brysonreece.com/]]></website>
         <language></language>
         <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[A fork of 'XBMCTorrent' by steeve]]></summary>
-        <description><![CDATA[Seamlessly watch content from across the internet.]]></description>
+        <disclaimer>A fork of 'XBMCTorrent' by steeve</disclaimer>
+        <summary><![CDATA[Seamlessly watch content from across the internet.]]></summary>
+        <description><![CDATA[Enjoy a variety of content, from TV shows to the latest movies!]]></description>
     </extension>
 </addon>
