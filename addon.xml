@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.stream" name="Stream" version="1.0.0" provider-name="Bryson Reece">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website><![CDATA[http://www.brysonreece.com/]]></website>
+        <language></language>
+        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
+        <summary><![CDATA[A fork of 'XBMCTorrent' by steeve]]></summary>
+        <description><![CDATA[Seamlessly watch content from across the internet.]]></description>
+    </extension>
+</addon>
