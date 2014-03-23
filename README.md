@@ -16,7 +16,7 @@ Check out the [Releases](https://github.com/brysonreece/stream/releases) tab to 
 
 Supported Platforms
 -------------------
-* Windows x32 x64
+* Windows x32 and x64
 * OS X x32 and x64
 * Linux x32 and x64
 * Raspberry Pi
