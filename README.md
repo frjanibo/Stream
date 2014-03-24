@@ -1,18 +1,23 @@
-Stream
+XBMCtorrent
 ===========
-A fork of 'XBMCtorrent' by steeve
 
 What it is
 ----------
-Stream allows you to stream magnet links from within XBMC, without having to wait for the whole file to download, thanks to sequential downloading (see FAQ).
+XBMCtorrent allows you to stream bittorrent magnet links right from XBMC, without having to wait for the whole file to download, thanks to sequential download (see FAQ).
 
+Demo
+----
+http://www.youtube.com/watch?v=NQiC62ig3N0
 
+[![XBMCtorrent Demo Video](http://i.ytimg.com/vi/NQiC62ig3N0/maxresdefault.jpg)](http://www.youtube.com/watch?v=NQiC62ig3N0)
 
 Download
 --------
-Check out the [Releases](https://github.com/brysonreece/stream/releases) tab to download the ZIP file.
+Check out the [Releases](https://github.com/steeve/xbmctorrent/releases) tab to download the ZIP file.
 
-
+Follow XBMCtorrent
+------------------
+[![Follow on Facebook](http://i.imgur.com/rwqPqe3.png)](https://www.facebook.com/xbmctorrent) [![Follow on Twitter](http://i.imgur.com/B5hiGN4.png)](https://twitter.com/XBMCtorrent)
 
 Supported Platforms
 -------------------
@@ -24,14 +29,18 @@ Supported Platforms
 
 How it works
 ------------
-Stream is actually two parts:
-* _Stream_: the modified XBMCtorrent addon written in Python.
-* `torrent2http`: a custom bittorrent client written in Go and leveraging libtorrent-rasterbar, that turns magnet links into HTTP endpoints, using sequential downloading.
+XBMCtorrent is actually two parts:
+* _XBMCtorrent_: the addon written in Python.
+* `torrent2http`: a custom bittorrent client written in Go and leveraging libtorrent-rasterbar, that turns magnet links into HTTP endpoints, using sequential download.
 
 If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sources at:
 * https://github.com/steeve/libtorrent-go
 * https://github.com/steeve/torrent2http
 
+
+Discussions
+-----------
+Two threads are active, on [XBMC HUB](http://www.xbmchub.com/forums/general-video-addon-discussion/13153-%5Balpha%5D-xbmctorrent-torrent-streaming-xbmc.html) and [XBMC.org](http://forum.xbmc.org/showthread.php?tid=174736).
 
 
 FAQ
@@ -52,16 +61,16 @@ Yes, although now if you try to seek to a part you haven't downloaded yet, XBMC 
 Of course! 720p and 1080p work fine, provided you have enough bandwidth, and there are enough people on the torrent (see video).
 
 #### Doesn't sequential download on bittorrent is bad?
-Generally, yes. However, Stream respects the same [requirements "defined" by uTorrent 3](http://www.utorrent.com/help/faq/ut3#faq2[/url]). Also, Stream tries to make it up to the swarm by seeding while you watch the movie.
+Generally, yes. However, XBMCtorrent respects the same [requirements "defined" by uTorrent 3](http://www.utorrent.com/help/faq/ut3#faq2[/url]). Also, XBMCtorrent tries to make it up to the swarm by seeding while you watch the movie.
 
 #### What about seeding?
-Stream will seed the file you're watching until it's finished playing. For instance, if the download of a 2 hours long movie is finished in 10 minutes, you'll continue seeding it until you finish watching the movie. This is by design, to make up for the fact that we are using sequential download.
+XBMCtorrent will seed the file you're watching until it's finished playing. For instance, if the download of a 2 hours long movie is finished in 10 minutes, you'll continue seeding it until you finish watching the movie. This is by design, to make up for the fact that we are using sequential download.
 
 #### Does it downloads the whole file? Do I need the space? Is it ever deleted?
-Yes and yes. Stream will pre-allocate the whole file before download. So if you want to watch a 4GB video, you'll need the 4GB. The file is deleted once you stop watching it, unless you choose to keep files from within the addon settings.
+Yes and yes. XBMCtorrent will pre-allocate the whole file before download. So if you want to watch a 4GB video, you'll need the 4GB. The file is deleted once you stop watching it.
 
 #### Where is the file located? Can I change it?
-Currently the file is downloaded in the same directory as the torrent2http executable by default (in resources/bin/<OS>/ in the addon directory). You can change this location from within Stream's settings.
+Currently the file is download in the same directory as the torrent2http executable (in resources/bin/<OS>/ in the addon directory). You cannot change it yet, but that will be configurable in the near future.
 
 #### Can I keep the file after playback?
 Yes, just enable this option in the addon settings.
@@ -70,9 +79,7 @@ Yes, just enable this option in the addon settings.
 Yes of course. Just set the download directly to your NAS location, and make sure you have enabled "Keep files after playback" option.
 
 #### Why are you using Google Analytics? Can I disable it?
-Short answer: In order to benefit the original XBMCtorrent developer, steeve. For disabling, see long answer.
-
-Long answer: First of all, your whole IP isn't tracked. Only the first 3 parts of it, thanks to Analytics [Anonymous Mode](https://developers.google.com/analytics/devguides/collection/gajs/methods/gaJSApi_gat?csw=1#_gat._anonymizeIp). So for instance, if your IP is A.B.C.D, only A.B.C.0 will be logged.
+First of all, your whole IP isn't tracked. Only the first 3 parts of it, thanks to Analytics [Anonymous Mode](https://developers.google.com/analytics/devguides/collection/gajs/methods/gaJSApi_gat?csw=1#_gat._anonymizeIp). So for instance, if your IP is A.B.C.D, only A.B.C.0 will be logged.
 Second, this is my only tool to track audience interest, this is great information, and it really helps.
 Finally if you really want to, you can disable it in the addon settings (except for 1 GA event when you go in the addon).
 If you are blocking GA on your computer altogether, you'll still be able to use the addon.
@@ -100,4 +107,6 @@ If it still doesn't work, you can go in Advanced > Custom Domains. Here to you c
 
 Changelog
 ---------
-Check out the [Releases](https://github.com/brysonreece/stream/releases) tab.
+Check out the [Releases](https://github.com/steeve/xbmctorrent/releases) tab.
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/f2446cd214777b8a29828a85fb93e936 "githalytics.com")](http://githalytics.com/steeve/xbmctorrent)

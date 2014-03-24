@@ -1,4 +1,4 @@
-NAME = plugin.video.xbmctorrent
+NAME = plugin.video.stream
 GIT = git
 GIT_VERSION = $(shell $(GIT) describe --always)
 VERSION = $(patsubst v%,%,$(GIT_VERSION))
@@ -11,7 +11,6 @@ all: clean zip
 bootstraper:
 	mkdir -p $(NAME)
 	sed s/\$$VERSION/0.0.1/g < addon.xml.tpl > $(NAME)/addon.xml
-	cp fanart.jpg $(NAME)
 	cp icon.png $(NAME)
 	zip -9 -r $(NAME).zip $(NAME)
 	rm -rf $(NAME)
