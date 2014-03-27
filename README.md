@@ -1,6 +1,6 @@
 Stream
 ===========
-A fork of 'XBMCtorrent' by steeve
+A fork of ['XBMCtorrent'](https://www.github.com/steeve/XBMCtorrent) by steeve
 
 What it is
 ----------
