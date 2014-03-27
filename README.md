@@ -8,6 +8,12 @@ Stream allows you to stream magnet links from within XBMC, without having to wai
 
 
 
+How It's Different
+-------------------
+One of the noticeable differences between Stream and XBMCtorrent is the user interface. XBMCtorrent provides a basis for accessing media while Stream helps offer better categorical organization, media headings, and plenty of backend upgrades. Want to give it a shot? [Download today!](https://www.github.com/brysonreece/stream/releases)
+
+
+
 Download
 --------
 Check out the [Releases](https://github.com/brysonreece/stream/releases) tab to download the ZIP file.
@@ -16,7 +22,7 @@ Check out the [Releases](https://github.com/brysonreece/stream/releases) tab to 
 
 Supported Platforms
 -------------------
-* Windows x32 x64
+* Windows x32 and x64
 * OS X x32 and x64
 * Linux x32 and x64
 * Raspberry Pi
