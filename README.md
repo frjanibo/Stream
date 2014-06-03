@@ -2,7 +2,7 @@ Stream
 ===========
 A fork of ['XBMCtorrent'](https://www.github.com/steeve/XBMCtorrent) by steeve
 
-What it is
+What is it?
 ----------
 Stream allows you to stream magnet links from within XBMC, without having to wait for the whole file to download, thanks to sequential downloading (see FAQ).
 
@@ -10,8 +10,9 @@ Stream allows you to stream magnet links from within XBMC, without having to wai
 
 Screenshots
 ------------
-Check out screenshots [here!](http://imgur.com/a/B0D1B)
-
+![Choose from different types of media!](http://i.imgur.com/2tKqKjg.png "Choose from different types of media!")
+![Enjoy your favorite TV shows...](http://i.imgur.com/LeHstnd.png "[Enjoy your favorite TV shows...")
+![...and even your favorite movies!](http://i.imgur.com/fIPnUie.jpg?1 "...and even your favorite movies!")
 
 
 How It's Different
@@ -37,10 +38,10 @@ Supported Platforms
 How it works
 ------------
 Stream is actually two parts:
-* _Stream_: the modified XBMCtorrent addon written in Python.
+* 'Stream': the modified XBMCtorrent addon written in Python.
 * `torrent2http`: a custom bittorrent client written in Go and leveraging libtorrent-rasterbar, that turns magnet links into HTTP endpoints, using sequential downloading.
 
-If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sources at:
+If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sources by steeve at:
 * https://github.com/steeve/libtorrent-go
 * https://github.com/steeve/torrent2http
 
@@ -48,29 +49,23 @@ If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sou
 
 FAQ
 ---
-#### I can't code. How can I help?
-Spread the word. Talk about it with your friends, show them, make videos, tutorials. Talk about it on social networks, blogs etc...
-
 #### Does it work with all torrents?
-It works with most. Some torrents are known not to work. However, x264 and Xvid ones generally work pretty well, although some won't work yet. Some AVI files don't like to be streamed over HTTP, so YMMV. Of course, the goal is to shrink the number of torrents that don't work.
+It works with most. Occasionally, some torrents are known not to work.
 
-#### The plugin doesn't work at all, what can I do?
-First of all, we need to make sure it's not the torrent fault. I usually test this by searching for small serie episodes on Piratebay. Try that, if it does't work, send me your xbmc.log.
+#### The plugin doesn't work at all, what can I do?mg.jpg "Optional title")
+First of all, we need to make sure it's not the torrent's fault. Test this by initiating another download. Try that, if it does't work, send me your xbmc.log.
 
 #### Can I seek in a video?
-Yes, although now if you try to seek to a part you haven't downloaded yet, XBMC will wait for that part to be available. This will be fixed in a future release.
+Yes, although now if you try to seek to a part you haven't downloaded yet, XBMC will wait for that part to be available.
 
 #### Can it stream HD?
-Of course! 720p and 1080p work fine, provided you have enough bandwidth, and there are enough people on the torrent (see video).
+Of course! 720p and 1080p work fine, provided you have enough bandwidth, and there are enough people on the torrent seeding the torrent.
 
-#### Doesn't sequential download on bittorrent is bad?
-Generally, yes. However, Stream respects the same [requirements "defined" by uTorrent 3](http://www.utorrent.com/help/faq/ut3#faq2[/url]). Also, Stream tries to make it up to the swarm by seeding while you watch the movie.
+#### Isn't sequential download on bittorrent is bad?
+Generally, yes. However, Stream respects the same [requirements "defined" by uTorrent 3](http://www.utorrent.com/help/faq/ut3#faq2[/url]). Also, Stream tries to make it up by seeding while you watch the movie.
 
-#### What about seeding?
-Stream will seed the file you're watching until it's finished playing. For instance, if the download of a 2 hours long movie is finished in 10 minutes, you'll continue seeding it until you finish watching the movie. This is by design, to make up for the fact that we are using sequential download.
-
-#### Does it downloads the whole file? Do I need the space? Is it ever deleted?
-Yes and yes. Stream will pre-allocate the whole file before download. So if you want to watch a 4GB video, you'll need the 4GB. The file is deleted once you stop watching it, unless you choose to keep files from within the addon settings.
+#### Does it download the whole file? Do I need the space? Is it ever deleted?
+Yes, yes, and yes. Stream will pre-allocate the whole file before download. So if you want to watch a 4GB video, you'll need the 4GB available on your storage medium. The file is deleted once you stop watching it, unless you choose to keep files from within the addon settings.
 
 #### Where is the file located? Can I change it?
 Currently the file is downloaded in the same directory as the torrent2http executable by default (in resources/bin/<OS>/ in the addon directory). You can change this location from within Stream's settings.
@@ -79,7 +74,7 @@ Currently the file is downloaded in the same directory as the torrent2http execu
 Yes, just enable this option in the addon settings.
 
 #### Can I set it to download directly to my NAS and keep it after playback?
-Yes of course. Just set the download directly to your NAS location, and make sure you have enabled "Keep files after playback" option.
+Just set the download directly to your NAS location, and make sure you have enabled "Keep files after playback" option.
 
 #### Why are you using Google Analytics? Can I disable it?
 Short answer: In order to benefit the original XBMCtorrent developer, steeve. For disabling, see long answer.
@@ -90,10 +85,10 @@ Finally if you really want to, you can disable it in the addon settings (except 
 If you are blocking GA on your computer altogether, you'll still be able to use the addon.
 
 #### How can I report a bug?
-Please, file an issue :)
+Please, file an issue.
 
 #### How can I use the Play-to-XBMC feature?
-First of all, install [Play-to-XBMC](https://chrome.google.com/webstore/detail/play-to-xbmc/fncjhcjfnnooidlkijollckpakkebden) from khloke.
+First, install [Play-to-XBMC](https://chrome.google.com/webstore/detail/play-to-xbmc/fncjhcjfnnooidlkijollckpakkebden) from khloke.
 Then, follow the Play-to-XBMC install instructions:
 
 > Setup:
@@ -113,3 +108,7 @@ If it still doesn't work, you can go in Advanced > Custom Domains. Here to you c
 Changelog
 ---------
 Check out the [Releases](https://github.com/brysonreece/stream/releases) tab.
+
+
+
+_Shoutout to [nessus](http://forum.xbmc.org/member.php?action=profile&uid=47428) for the amazingly-awesome [Bello](http://forum.xbmc.org/showthread.php?tid=158577) skin_
