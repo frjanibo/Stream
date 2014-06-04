@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.stream" name="Stream" version="1.4.4" provider-name="brysonreece">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -6,12 +5,16 @@
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
+    <extension point="xbmc.addon.repository" name="brysonreece XBMC Repository">
+        <info compressed="false">http://xbmc-repo.brysonreece.com/addons.xml</info>
+        <checksum>http://xbmc-repo.brysonreece.com/addons.xml.md5</checksum>
+        <datadir zip="true">http://xbmc-repo.brysonreece.com/stream/</datadir>
+    </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <website><![CDATA[http://stream.brysonreece.com/]]></website>
-        <language></language>
-        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[Seamlessly watch content from across the internet.]]></summary>
-        <description><![CDATA[Enjoy a variety of content, from TV shows to the latest movies!]]></description>
+        <website>http://stream.brysonreece.com/</website>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <summary lang="en">Seamlessly watch content from across the internet.</summary>
+        <description lang="en">Enjoy a variety of content, from your favorite TV shows to the latest movies!</description>
     </extension>
 </addon>

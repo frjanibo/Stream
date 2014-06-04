@@ -13,11 +13,10 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <website><![CDATA[http://stream.brysonreece.com/]]></website>
+        <website>http://stream.brysonreece.com/</website>
         <language></language>
-        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <disclaimer>A fork of 'XBMCTorrent' by steeve</disclaimer>
-        <summary><![CDATA[Seamlessly watch content from across the internet.]]></summary>
-        <description><![CDATA[Enjoy a variety of content, from your TV shows to the latest movies!]]></description>
+        <license><GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <summary>Seamlessly watch content from across the internet.</summary>
+        <description>Enjoy a variety of content, from your TV shows to the latest movies!</description>
     </extension>
 </addon>
