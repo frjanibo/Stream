@@ -49,17 +49,20 @@ If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sou
 
 FAQ
 ---
+#### How do I install Stream?
+Simply download the latest version [here,](http://xbmc-repo.brysonreece.com/plugin.video.stream/plugin.video.stream-latest.zip) navigate to your XBMC settings/Addons, choose 'Install from zip', navigate to where you downloaded Stream, select it, and enjoy!
+
 #### Does it work with all torrents?
 It works with most. Occasionally, some torrents are known not to work.
 
-#### The plugin doesn't work at all, what can I do?mg.jpg "Optional title")
-First of all, we need to make sure it's not the torrent's fault. Test this by initiating another download. Try that, if it does't work, send me your xbmc.log.
+#### The plugin doesn't work at all, what can I do?
+First of all, we need to make sure it's not the torrent's fault. Test this by initiating another download. If it does't work, send me your xbmc.log.
 
 #### Can I seek in a video?
 Yes, although now if you try to seek to a part you haven't downloaded yet, XBMC will wait for that part to be available.
 
 #### Can it stream HD?
-Of course! 720p and 1080p work fine, provided you have enough bandwidth, and there are enough people on the torrent seeding the torrent.
+Of course! 720p and 1080p work fine, provided you have enough bandwidth, and there are enough people seeding the torrent.
 
 #### Isn't sequential download on bittorrent is bad?
 Generally, yes. However, Stream respects the same [requirements "defined" by uTorrent 3](http://www.utorrent.com/help/faq/ut3#faq2[/url]). Also, Stream tries to make it up by seeding while you watch the movie.
