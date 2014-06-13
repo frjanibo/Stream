@@ -17,13 +17,13 @@ Screenshots
 
 How It's Different
 -------------------
-One of the noticeable differences between Stream and XBMCtorrent is the user interface. XBMCtorrent provides a basis for accessing media while Stream helps offer better categorical organization, media headings, and plenty of backend upgrades. Want to give it a shot? [Download today!](https://www.github.com/brysonreece/stream/releases)
+One of the noticeable differences between Stream and XBMCtorrent is the user interface. XBMCtorrent provides a basis for accessing media while Stream helps offer better categorical organization, media headings, and plenty of backend upgrades. Want to give it a shot? [Download today!](http://stream.brysonreece.com/)
 
 
 
 Download
 --------
-Check out the [Releases](https://github.com/brysonreece/stream/releases) tab to download the ZIP file.
+Check out the [Stream website](http://stream.brysonreece.com/) to download the ZIP file.
 
 
 
@@ -50,13 +50,13 @@ If you feel adventurous, you can find the `torrent2http` and `libtorrent-go` sou
 FAQ
 ---
 #### How do I install Stream?
-Simply download the latest version [here,](http://xbmc-repo.brysonreece.com/plugin.video.stream/plugin.video.stream-latest.zip) navigate to your XBMC settings/Addons, choose 'Install from zip', navigate to where you downloaded Stream, select it, and enjoy!
+Simply download the latest version [here,](http://stream.brysonreece.com/) navigate to your XBMC settings/Addons, choose 'Install from zip', navigate to where you downloaded Stream, select it, and enjoy!
 
 #### Does it work with all torrents?
 It works with most. Occasionally, some torrents are known not to work.
 
 #### The plugin doesn't work at all, what can I do?
-First of all, we need to make sure it's not the torrent's fault. Test this by initiating another download. If it does't work, send me your xbmc.log.
+First of all, we need to make sure it's not the torrent's fault. Test this by initiating another download. If it doesn't work, post an issue along with your xbmc.log.
 
 #### Can I seek in a video?
 Yes, although now if you try to seek to a part you haven't downloaded yet, XBMC will wait for that part to be available.
@@ -80,7 +80,7 @@ Yes, just enable this option in the addon settings.
 Just set the download directly to your NAS location, and make sure you have enabled "Keep files after playback" option.
 
 #### Why are you using Google Analytics? Can I disable it?
-Short answer: In order to benefit the original XBMCtorrent developer, steeve. For disabling, see long answer.
+Short answer: In order to gain analytics about how many people use Stream.
 
 Long answer: First of all, your whole IP isn't tracked. Only the first 3 parts of it, thanks to Analytics [Anonymous Mode](https://developers.google.com/analytics/devguides/collection/gajs/methods/gaJSApi_gat?csw=1#_gat._anonymizeIp). So for instance, if your IP is A.B.C.D, only A.B.C.0 will be logged.
 Second, this is my only tool to track audience interest, this is great information, and it really helps.
@@ -90,7 +90,7 @@ If you are blocking GA on your computer altogether, you'll still be able to use 
 #### How can I report a bug?
 Please, file an issue.
 
-#### How can I use the Play-to-XBMC feature?
+<!-- #### How can I use the Play-to-XBMC feature?
 First, install [Play-to-XBMC](https://chrome.google.com/webstore/detail/play-to-xbmc/fncjhcjfnnooidlkijollckpakkebden) from khloke.
 Then, follow the Play-to-XBMC install instructions:
 
@@ -103,7 +103,7 @@ Then, follow the Play-to-XBMC install instructions:
 > * Put in the IP address or hostname of your XBMC box and fill in the port number with the port number you wrote down earlier. Fill in the username and password if you entered one into XBMC.
 
 Once you've done all that, simply right click on any magnet link, and select Play-to-XBMC > Play. Boom.
-
+-->
 #### Provider X is blocked in my country/ISP, how can I set another domain?
 Enable Auto-Unblock in the settings.
 If it still doesn't work, you can go in Advanced > Custom Domains. Here to you can set each provider with whatever proxy you choose.
