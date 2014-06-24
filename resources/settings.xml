@@ -29,6 +29,8 @@
         <setting id="use_socks" label="Use SOCKS5 proxy?" type="bool" default="false" />
         <setting id="proxy_url" type="text" label="URL" default="localhost" />
         <setting id="proxy_port" type="text" label="Port" default="9050" />
+        <setting id="proxy_user" type="text" label="Username (optional)" default="" />
+        <setting id="proxy_pass" type="password" label="Password (optional)" default="" />
 
         <setting label="Custom domains" type="lsep"/>
         <setting id="base_eztv" type="text" label="EZTV - (TV Shows)" default="http://eztv.it" />
