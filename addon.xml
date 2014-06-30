@@ -1,4 +1,4 @@
-<addon id="plugin.video.stream" name="Stream" version="1.4.6-RC1" provider-name="brysonreece">
+<addon id="plugin.video.stream" name="Stream" version="1.4.6-RC2" provider-name="brysonreece">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
