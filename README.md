@@ -1,4 +1,4 @@
-<span>I apoligize for the lack of updates/support, I am currently dealing with college and all that is included. For the time being, feel free to continue to fork this addon, make changes, and make pull requests.</span>
+##**I apologize for the lack of updates/support, I am currently dealing with college and all that is included. For the time being, feel free to continue to fork this addon, make changes, and make pull requests.**
 
 Stream
 ===========
