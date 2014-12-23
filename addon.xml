@@ -1,4 +1,4 @@
-<addon id="plugin.video.stream" name="Stream" version="1.4.6-RC2" provider-name="brysonreece">
+<addon id="plugin.video.stream" name="Stream Popcorn Edition" version="1.4.6-RC2" provider-name="frjanibo">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -15,6 +15,6 @@
         <website>http://stream.brysonreece.com/</website>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <summary lang="en">Seamlessly watch content from across the internet.</summary>
-        <description lang="en">Enjoy a variety of content, from your favorite TV shows to the latest movies!</description>
+        <description lang="en">Popcorn Time!</description>
     </extension>
 </addon>
