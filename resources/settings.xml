@@ -33,9 +33,9 @@
         <setting id="proxy_pass" type="text" label="Password (optional)" default="" />
 
         <setting label="Custom domains" type="lsep"/>
-        <setting id="base_eztv" type="text" label="EZTV - (TV Shows)" default="http://eztv.it" />
-        <setting id="base_yify" type="text" label="YIFY Torrents - (Movies)" default="http://yts.re" />
-        <setting id="base_tpb" type="text" label="The Pirate Bay - (Misc)" default="http://thepiratebay.org" />
+        <setting id="base_eztv" type="text" label="EZTV - (TV Shows)" default="http://eztv.ch" />
+        <setting id="base_yify" type="text" label="YIFY Torrents - (Movies)" default="http://yts.to" />
+        <setting id="base_tpb" type="text" label="The Pirate Bay - (Misc)" default="http://thepiratebay.mn" />
 
         <setting label="Google Analytics" type="lsep"/>
         <setting id="ga_disable" type="bool" label="Disable (except for index)" default="true" />
