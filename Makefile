@@ -1,4 +1,4 @@
-NAME = plugin.video.stream
+NAME = plugin.video.streampc
 GIT = git
 GIT_VERSION = $(shell $(GIT) describe --tags --always)
 VERSION = $(patsubst v%,%,$(GIT_VERSION))
